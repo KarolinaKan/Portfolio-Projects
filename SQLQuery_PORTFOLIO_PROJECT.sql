@@ -1,11 +1,15 @@
+/*
+Covid 19 Data Exploration 
+Skills used: Joins, CTE's, Temp Tables, Windows Functions, Aggregate Functions, Creating Views, Converting Data Types
+*/
+
+
 SELECT *
 FROM CovidDeaths
 WHERE continent IS NOT NULL
 ORDER BY 3,4
 
---SELECT *
---FROM CovidVaccinations
---ORDER BY 3,4
+-- Select Data that we are going to be starting with
 
 SELECT Location, date, total_cases, new_cases, total_deaths, population
 FROM PortfolioProject..CovidDeaths
